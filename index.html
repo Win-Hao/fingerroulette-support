@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>手指大转盘 - 技术支持与隐私政策</title>
+    <title>Win-Hao Apps - 技术支持与隐私政策</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -13,21 +13,34 @@
             line-height: 1.8;
         }
         .container { max-width: 640px; margin: 0 auto; padding: 48px 20px; }
-        .header { text-align: center; margin-bottom: 40px; }
+        .header { text-align: center; margin-bottom: 48px; }
+        .brand {
+            font-size: 14px;
+            color: #666;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
         h1 {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 700;
             background: linear-gradient(to bottom, #d4a84b, #a67c2e);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 4px;
         }
-        .subtitle { color: #666; font-size: 14px; }
+        .subtitle { color: #555; font-size: 14px; }
         h2 {
             color: #c4a34a;
             font-size: 18px;
             font-weight: 600;
             margin-bottom: 12px;
+        }
+        h3 {
+            color: #ddd;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
         }
         .section {
             background: #141414;
@@ -45,74 +58,126 @@
         .divider { border: none; border-top: 1px solid #1a1a1a; margin: 32px 0; }
         .footer { text-align: center; color: #444; font-size: 13px; margin-top: 40px; }
         .email-link { display: inline-block; background: #1a1a1a; padding: 8px 16px; border-radius: 8px; margin-top: 4px; }
+        .app-card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .app-card .app-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: #222;
+            flex-shrink: 0;
+        }
+        .app-card .app-info { flex: 1; }
+        .app-card .app-name { color: #eee; font-weight: 600; font-size: 15px; }
+        .app-card .app-desc { color: #888; font-size: 13px; margin: 0; }
+        .app-anchor { display: block; position: relative; top: -20px; visibility: hidden; }
+        .nav-links { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 16px; }
+        .nav-links a {
+            background: #1a1a1a;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #bbb;
+        }
+        .nav-links a:hover { color: #c4a34a; text-decoration: none; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>手指大转盘</h1>
-            <p class="subtitle">技术支持与隐私政策</p>
+            <p class="brand">Win-Hao Apps</p>
+            <h1>技术支持与隐私政策</h1>
+            <p class="subtitle">Technical Support & Privacy Policy</p>
+            <nav class="nav-links">
+                <a href="#finger-roulette">手指大转盘</a>
+                <!-- NEW_APP_NAV -->
+            </nav>
         </div>
 
+        <!-- ==================== -->
+        <!-- 通用技术支持 -->
+        <!-- ==================== -->
         <div class="section">
-            <h2>技术支持</h2>
-            <p>如果您在使用过程中遇到任何问题，或有功能建议，请通过邮件联系我们：</p>
+            <h2>技术支持 / Technical Support</h2>
+            <p>如果您在使用我们的任何应用时遇到问题，或有功能建议，请通过邮件联系：</p>
+            <p>If you encounter any issues or have feature suggestions, please contact us:</p>
             <p class="email-link"><a href="mailto:17602041041@163.com">17602041041@163.com</a></p>
-            <p>我们会在 48 小时内回复您的消息。</p>
-        </div>
-
-        <div class="section">
-            <h2>常见问题</h2>
-            <ul>
-                <li><strong>支持多少人同时游戏？</strong><br>同时按压模式：iPhone 最多 5 人，iPad 最多 11 人。轮流点击模式不限人数。</li>
-                <li><strong>如何移除已放置的手指？</strong><br>在轮流点击模式下，点击已有的圆圈即可移除。</li>
-                <li><strong>没有声音怎么办？</strong><br>请检查设备是否静音，或在应用设置中开启声音选项。</li>
-                <li><strong>触感反馈没有效果？</strong><br>请确认设备支持触感反馈，并在应用设置中开启该选项。</li>
-            </ul>
+            <p>我们会在 48 小时内回复。/ We will respond within 48 hours.</p>
         </div>
 
         <hr class="divider">
 
-        <div class="section">
-            <h2>隐私政策</h2>
-            <p><strong>最后更新日期：2026年3月25日</strong></p>
-            <p>「手指大转盘」（以下简称"本应用"）非常重视您的隐私。本隐私政策说明了我们如何处理您的信息。</p>
+        <!-- ==================== -->
+        <!-- 手指大转盘 -->
+        <!-- ==================== -->
+        <span id="finger-roulette" class="app-anchor"></span>
+
+        <div class="app-card">
+            <div class="app-info">
+                <p class="app-name">手指大转盘 / Finger Spin Picker</p>
+                <p class="app-desc">聚会随机选人神器 / Party Random Picker</p>
+            </div>
         </div>
 
         <div class="section">
-            <h2>信息收集</h2>
-            <p>本应用<strong>不会收集、存储或传输任何个人信息</strong>。具体而言：</p>
+            <h3>常见问题 / FAQ</h3>
             <ul>
-                <li>不收集姓名、邮箱、电话号码等个人身份信息</li>
-                <li>不收集地理位置信息</li>
-                <li>不使用任何第三方数据分析或追踪工具</li>
-                <li>不包含任何形式的广告或广告追踪</li>
-                <li>所有游戏设置数据仅存储在您的设备本地</li>
+                <li><strong>支持多少人同时游戏？</strong><br>同时按压模式：iPhone 最多 5 人，iPad 最多 11 人。轮流点击模式不限人数。<br><em>Hold mode: up to 5 on iPhone, 11 on iPad. Tap mode: unlimited.</em></li>
+                <li><strong>如何移除已放置的手指？</strong><br>在轮流点击模式下，点击已有的圆圈即可移除。<br><em>In tap mode, tap an existing circle to remove it.</em></li>
+                <li><strong>没有声音怎么办？</strong><br>请检查设备是否静音，或在应用设置中开启声音选项。<br><em>Check if your device is muted, or enable sound in app settings.</em></li>
+                <li><strong>触感反馈没有效果？</strong><br>请确认设备支持触感反馈，并在应用设置中开启该选项。<br><em>Ensure your device supports haptic feedback and enable it in settings.</em></li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>第三方服务</h2>
-            <p>本应用不集成任何第三方服务，不会与任何第三方共享任何数据。</p>
+            <h3>隐私政策 / Privacy Policy</h3>
+            <p><strong>最后更新 / Last updated: 2026-03-25</strong></p>
+            <p>「手指大转盘」不会收集、存储或传输任何个人信息。</p>
+            <p><em>"Finger Spin Picker" does not collect, store, or transmit any personal information.</em></p>
+            <ul>
+                <li>不收集姓名、邮箱、电话号码等个人身份信息 / No personal identifiers collected</li>
+                <li>不收集地理位置信息 / No location data collected</li>
+                <li>不使用任何第三方数据分析或追踪工具 / No third-party analytics or tracking</li>
+                <li>不包含任何形式的广告 / No advertisements</li>
+                <li>所有数据仅存储在您的设备本地 / All data stored locally on your device</li>
+            </ul>
+            <p>本应用不集成任何第三方服务，不与任何第三方共享数据。</p>
+            <p><em>This app does not integrate any third-party services and does not share data with any third party.</em></p>
+            <p>本应用适合所有年龄段用户，不会收集任何用户（包括 13 岁以下儿童）的个人信息。</p>
+            <p><em>This app is suitable for all ages and does not collect personal information from any user, including children under 13.</em></p>
+            <p><strong>数据保留与删除 / Data Retention & Deletion:</strong> 本应用不收集任何数据，因此无需数据保留或删除。如需重置应用设置，可直接删除并重新安装应用。</p>
+            <p><em>This app does not collect any data, so there is no data to retain or delete. To reset app settings, simply delete and reinstall the app.</em></p>
         </div>
 
-        <div class="section">
-            <h2>儿童隐私</h2>
-            <p>本应用适合所有年龄段用户使用，不会收集任何用户（包括 13 岁以下儿童）的个人信息。</p>
-        </div>
+        <!-- NEW_APP_SECTION -->
 
-        <div class="section">
-            <h2>隐私政策变更</h2>
-            <p>如本隐私政策发生变更，我们会在此页面发布更新后的版本，并修改页面顶部的"最后更新日期"。</p>
-        </div>
+        <hr class="divider">
 
+        <!-- ==================== -->
+        <!-- 通用隐私声明 -->
+        <!-- ==================== -->
         <div class="section">
-            <h2>联系我们</h2>
-            <p>如对本隐私政策有任何疑问，请联系：</p>
+            <h2>通用隐私声明 / General Privacy Statement</h2>
+            <p>Win-Hao Apps 旗下所有应用均遵循以下隐私原则：</p>
+            <p><em>All apps by Win-Hao Apps follow these privacy principles:</em></p>
+            <ul>
+                <li>我们的应用均为本地化应用，数据存储在您的设备上，不会上传至任何服务器。<br><em>Our apps are local-first. Your data stays on your device and is never uploaded to any server.</em></li>
+                <li>我们不使用任何第三方广告、分析或追踪工具。<br><em>We do not use any third-party advertising, analytics, or tracking tools.</em></li>
+                <li>我们不会向任何第三方出售、交易或以其他方式转让您的信息。<br><em>We do not sell, trade, or transfer your information to any third party.</em></li>
+            </ul>
+            <p>如对任何应用的隐私政策有疑问，请联系：</p>
+            <p><em>For questions about any app's privacy policy, contact:</em></p>
             <p class="email-link"><a href="mailto:17602041041@163.com">17602041041@163.com</a></p>
         </div>
 
-        <p class="footer">&copy; 2026 手指大转盘. All rights reserved.</p>
+        <p class="footer">&copy; 2026 Win-Hao Apps. All rights reserved.</p>
     </div>
 </body>
 </html>
